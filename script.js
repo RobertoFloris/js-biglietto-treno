@@ -1,7 +1,7 @@
-// const km = 150;
+// const km = 150.7;
 // const age = 70;
 
-const km = parseInt(prompt("Inserire quanti km si dovranno percorrere"));
+const km = parseFloat(prompt("Inserire quanti km si dovranno percorrere"));
 console.log("Si percorranno: " + km + "Km");
 
 const age = parseInt(prompt("Inserire la tua età"));
@@ -17,4 +17,4 @@ if (age<18){
   console.log("Sei over65 per cui ti viene applicato uno sconto del 40%");
 }
 
-console.log("Il prezzo del tuo biglietto è: "+ price + "€"); 
+console.log("Il prezzo del tuo biglietto è: "+ price.toFixed(2) + "€");  //arrotondamento a 2 numeri decimali per i centesimi
